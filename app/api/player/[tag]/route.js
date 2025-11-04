@@ -7,7 +7,7 @@ export async function GET(req, { params }) {
     // ✅ decode the tag
     const decodedTag = decodeURIComponent(tag);
 
-    const res = await fetch(`https://api.clashroyale.com/v1/players/${decodedTag}`, {
+    const res = await fetch(`${process.env.CLASH_ROYALE_API_URL}/players/${decodedTag}`, {
       headers: {
         Authorization: `Bearer ${process.env.CLASH_API_KEY}`,
       }
