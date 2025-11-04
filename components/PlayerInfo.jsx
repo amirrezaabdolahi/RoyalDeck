@@ -21,7 +21,7 @@ const PlayerInfo = () => {
             // setNotFound(false)
 
             try {
-                const response = await fetch(`/api/player/${encodeURIComponent(userTag.replace('#', '%23'))}`)
+                const response = await fetch(`/api/player/${encodeURIComponent(userTag)}`)
 
                 // if (response.status === 404) {
                 //     setUser(null)
