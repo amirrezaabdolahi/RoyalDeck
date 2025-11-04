@@ -9,7 +9,7 @@ export async function GET(req, { params }) {
 
     const res = await fetch(`${process.env.CLASH_ROYALE_API_URL}/players/${decodedTag}`, {
       headers: {
-        Authorization: `Bearer ${process.env.CLASH_API_KEY}`,
+        Authorization: `Bearer ${process.env.CLASH_ROYALE_API_KEY}`,
       }
     });
 
